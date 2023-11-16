@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title> Adicionar venda </title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+
+    h1 {
+      color: orange;
+    }
+
+    input,
+    button {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1> Confira sua listagem de vendas!</h1>
+
+  <div id="checkbox-container">
+    <button onclick="window.location.href='./cadastro-vendas.html'"> Voltar ao cadastro </button>
+    <button id="adicionarAoCarrinhoBtn">Adicionar venda(s) ao carrinho</button>
+    <button onclick="window.location.href='./carrinho.html'"> Ver carrinho</button>
+    <div id="mensagem"></div>
+    <div id="checkbox-container"></div>
+
+    <script type="text/javascript" src="./adicionar-venda.js">
+
+    </script>
+</body>
+
+</html>

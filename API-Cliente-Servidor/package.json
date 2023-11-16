@@ -1,0 +1,38 @@
+{
+  "name": "sua-loja",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "build": "npm install && npm run build-server",
+    "build-server": "echo 'Building server' && npm run compile-server",
+    "buildCommand": "go build -o app ."
+  },
+  "keywords": [],
+  "author": "Luan",
+  "license": "ISC",
+  "dependencies": {
+    "build": "^0.1.4",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongodb": "^6.0.0",
+    "mongoose": "^6.12.0",
+    "mongosh": "^2.0.0",
+    "nodemon": "^3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karinnylemosb/Livraria-Node.Js-API-Rest-Express-MongoDB-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/karinnylemosb/Livraria-Node.Js-API-Rest-Express-MongoDB-/issues"
+  },
+  "homepage": "https://github.com/karinnylemosb/Livraria-Node.Js-API-Rest-Express-MongoDB-#readme",
+  "description": "- Faça o download do repositório através do arquivo zip ou do terminal usando o git clone; - Acesse o diretório do projeto pelo seu terminal; - Rode o comando  ``` npm install ``` - Rode o comando ``` npm init ``` para inicializar o npm dentro do projeto. É necessário ter o Noje.js instalado para executar este projeto. - Rode o comando ``` npm start ``` ou ``` node server.js ``` para rodar a aplicação na aplicação.  - Abra o arquivo em seu navegador. - Dentro da pasta do projeto existe uma collection chamada \"Compras.postman_collection\", arraste ela até o software POSTMAN para fazer as manipulações da API.",
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  }
+}

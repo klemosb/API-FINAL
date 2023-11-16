@@ -1,0 +1,507 @@
+{
+	"info": {
+		"_postman_id": "537292cc-744f-480a-ac9b-1ccc6df18fca",
+		"name": "Compras",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27942713"
+	},
+	"item": [
+		{
+			"name": "Vendas",
+			"item": [
+				{
+					"name": "Buscar Vendas",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/vendas",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"vendas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Vendas por ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/vendas/650f5cc8abc1fa098d4f4bce",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"vendas",
+								"650f5cc8abc1fa098d4f4bce"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar Vendas",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"connection": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"nome\": \"Ração úmida felina\",\r\n    \"quantidade\": \"10\"\r\n}\r\n\r\n\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/vendas/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"vendas",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Vendas",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"3\",\r\n    \"nome\": \"Shampoo antipulgas 3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/vendas/6503745bb191ae8d04d346b6",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"vendas",
+								"6503745bb191ae8d04d346b6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Venda",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/vendas/650374f4b191ae8d04d346b9",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"vendas",
+								"650374f4b191ae8d04d346b9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Pag da Venda",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/vendas/busca?id=65088f663b118ea0477c3df6",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"vendas",
+								"busca"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "65088f663b118ea0477c3df6"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pagamento",
+			"item": [
+				{
+					"name": "Buscar Pagamento",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Length",
+								"value": "189",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/pagamento",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"pagamento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Pagamento por venda",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Length",
+								"value": "189",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/pagamento?venda=6509c00a7c3218db9837b4fb",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"pagamento"
+							],
+							"query": [
+								{
+									"key": "venda",
+									"value": "6509c00a7c3218db9837b4fb"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Pagamento por ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Length",
+								"value": "189",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/pagamento/6509b1961055baea000f24d5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"pagamento",
+								"6509b1961055baea000f24d5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar Pagamento",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"connection": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"valor\": 60,\r\n    \"forma_pagamento\": \"Crédito\",\r\n    \"num_parcelas\": 4\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/pagamento",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"pagamento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Pagamento",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"valor\": 50.00,\r\n    \"forma_pagamento\": \"Cartão\",\r\n    \"num_parcelas\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/vendas/6503745bb191ae8d04d346b6",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"vendas",
+								"6503745bb191ae8d04d346b6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Pagamento",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/vendas/65043de875db574d0a013abc",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"vendas",
+								"65043de875db574d0a013abc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Carrinho",
+			"item": [
+				{
+					"name": "Ver carrinho",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/carrinho",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"carrinho"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remover venda do carrinho",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/carrinho/remover/65105feacfc53ff6cdffdc59",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"carrinho",
+								"remover",
+								"65105feacfc53ff6cdffdc59"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adicionar venda ao carrinho Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var template = `",
+									"<style type=\"text/css\">",
+									"    .error-container {",
+									"        display: flex;",
+									"        align-items: center;",
+									"        justify-content: center;",
+									"        height: 100vh;",
+									"    }",
+									"    ",
+									"    .error-message {",
+									"        font-size: 24px;",
+									"        text-align: center;",
+									"        color: red;",
+									"    }",
+									"</style>",
+									"",
+									"<div class=\"error-container\">",
+									"    <div class=\"error-message\">",
+									"        {{response}}",
+									"    </div>",
+									"</div>",
+									"`;",
+									"",
+									"function constructVisualizerPayload() {",
+									"    return { response: pm.response.text() };",
+									"}",
+									"",
+									"pm.visualizer.set(template, constructVisualizerPayload());"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"vendaId\": \"65106114cfc53ff6cdffdc65\"\r\n}\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/carrinho/adicionar",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"carrinho",
+								"adicionar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
